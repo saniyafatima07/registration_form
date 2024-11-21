@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -33,7 +34,7 @@
         /></label>
       </fieldset>
       <fieldset>
-        <legend>Account type (required)</legend>
+        <legend>Account type (required):</legend>
         <label for="personal-account"
           ><input
             id="personal-account"
@@ -51,18 +52,21 @@
             name="account-type"
             class="inline"
           />
-          Business</label
-        >
+          Business</label>
       </fieldset>
-      <fieldset>
+      <fieldset class="profile">
         <label for="profile-picture"
           >Upload a profile picture:
           <input id="profile-picture" type="file" name="file"
         /></label>
+        </fieldset>
+        <fieldset class="age">
         <label for="age"
           >Input your age (years):
           <input id="age" type="number" name="age" min="13" max="120"
         /></label>
+      </fieldset>
+      <fieldset class="referrer">
         <label for="referrer"
           >How did you hear about us?
           <select id="referrer" name="referrer">
@@ -73,6 +77,7 @@
             <option value="4">Other</option>
           </select>
         </label>
+      </fieldset>
         <label for="bio"
           >Provide a bio:
           <textarea
