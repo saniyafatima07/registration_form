@@ -119,6 +119,10 @@ input[type="submit"] {
   min-width: 300px;
 }
 
+input[type="submit"]:hover {
+    background-color: rgb(105, 120, 189);
+}
+
 input[type="file"] {
   display: block;
   width: 100%;
@@ -143,6 +147,7 @@ label[for="profile-picture"] {
   text-align: left;
   align-items: center;
 }
+
 
 @media (max-width: 768px) {
   body {
